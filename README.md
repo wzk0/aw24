@@ -4,7 +4,7 @@
 
 ## 原因
 
-虽然Ubuntu现在自带的录屏功能比较快捷好用,但是每次保存下来的格式都是`webm`,一个一个手动用`ffmpeg`太麻烦了.
+虽然Ubuntu现在自带的录屏功能比较快捷好用,但是每次保存下来的格式都是`webm`,一个一个手动用`ffmpeg`转成常见的`mp4`格式太麻烦了.
 
 所以制作了这个脚本,可以在检测到`录屏`文件夹里新增的`webm`文件之后,自动转换为`mp4`.
 
@@ -19,7 +19,7 @@ sudo apt install ffmpeg -y
 接着下载脚本:
 
 ```
-https://raw.githubusercontent.com/wzk0/aw24/main/webm2mp4.py
+wget https://raw.githubusercontent.com/wzk0/aw24/main/webm2mp4.py
 ```
 
 随后将脚本移动到`/home/用户名/Videos/录屏`文件夹(其他语言的话名字会变)
