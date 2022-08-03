@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/wzk0/aw24/main/webm2mp4.py
 
 随后将脚本移动到`/home/用户名/Videos/录屏`文件夹(其他语言的话名字会变)
 
-接下来共有几个方法:
+接下来共有三个方法可以使用:
 
 ### 前台挂起
 
