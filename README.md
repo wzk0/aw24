@@ -10,9 +10,13 @@
 
 ## 使用
 
-首先
+首先应该安装`ffmpeg`:
 
-下载脚本:
+```
+sudo apt install ffmpeg -y
+```
+
+接着下载脚本:
 
 ```
 https://raw.githubusercontent.com/wzk0/aw24/main/webm2mp4.py
