@@ -94,6 +94,32 @@ nohup python3 /home/用户名/Videos/录屏/webm2mp4.py &
 
 随后使用`ffmpeg`转换格式,转换完之后删除原来的webm文件.
 
+## 问题
+
+先贴个图:
+
+![落差是杀死进程的瞬间](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/84tgedit.jpg)
+
+我本以为进程占用会很小,可没想到占用相当大.
+
+这可能是死循环的原因,于是加上了休眠机制:
+
+启动程序的瞬间会扫描一次,如果扫到了,就开始转换,没扫到就进入休眠,休眠周期为300秒(5分钟).
+
+![原因是这个](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041549339.png)
+
+当然,你可以修改这个数值`webm2mp4.chck('.',300)`中的参数300.
+
+![旧效果](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041554302.png)
+
+> 落差为杀死瞬间.
+
+![新效果](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041600969.png)
+
+> 落差为运行到休眠.
+
+差距挺大的!
+
 ## 最后
 
 拜拜~

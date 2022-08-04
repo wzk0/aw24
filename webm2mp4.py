@@ -7,8 +7,8 @@ def get_good_name(name):
 	name=name.replace(' ','\ ')
 	return name
 
-def chck():
-	ls=os.listdir('.')
+def chck(load,time_s):
+	ls=os.listdir(load)
 	for l in ls:
 		if '.webm' in l:
 			info=os.stat(l)
@@ -23,7 +23,7 @@ def chck():
 				os.system(t)
 				os.system(r)
 				os.system(n)
-			else:
-				pass
+		else:
+			time.sleep(time_s)
 while True:
-	chck()
+	chck('.',300)
