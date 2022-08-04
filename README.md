@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/wzk0/aw24/main/webm2mp4.py
 
 在`录屏文件所在文件夹`打开终端输入`nohup python3 webm2mp4.py &`,随后即可回车然后关闭此终端,或在此终端进行其他操作.
 
-若要杀死终端:
+若要杀死此进程:
 
 * 假如此终端未关闭,输入`jobs -l`即可获取`PID`:
 
@@ -98,7 +98,9 @@ nohup python3 /home/用户名/Videos/录屏/webm2mp4.py &
 
 先贴个图:
 
-![落差是杀死进程的瞬间](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/84tgedit.jpg)
+![](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/84tgedit.jpg)
+
+> 落差是杀死进程的瞬间.
 
 我本以为进程占用会很小,可没想到占用相当大.
 
@@ -106,15 +108,21 @@ nohup python3 /home/用户名/Videos/录屏/webm2mp4.py &
 
 启动程序的瞬间会扫描一次,如果扫到了,就开始转换,没扫到就进入休眠,休眠周期为300秒(5分钟).
 
-![原因是这个](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041549339.png)
+原因是这个：
+
+![](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041549339.png)
 
 当然,你可以修改这个数值`webm2mp4.chck('.',300)`中的参数300.
 
-![旧效果](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041554302.png)
+旧效果：
+
+![](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041554302.png)
 
 > 落差为杀死瞬间.
 
-![新效果](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041600969.png)
+新效果：
+
+![](https://ghproxy.com/https://raw.githubusercontent.com/wzk0/photo/main/202208041600969.png)
 
 > 落差为运行到休眠.
 
