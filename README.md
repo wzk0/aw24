@@ -130,4 +130,8 @@ nohup python3 /home/用户名/Videos/录屏/webm2mp4.py &
 
 ## 最后
 
+关于此项目的文章:
+
+[为Ubuntu编写一个录屏格式自动转换脚本及学习心路](https://wzk0.github.io/ubw/)
+
 拜拜~
