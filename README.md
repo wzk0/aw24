@@ -92,7 +92,7 @@ nohup python3 /home/用户名/Videos/录屏/webm2mp4.py &
 
 如果两个文件大小不一样,则说明录屏还在进行;
 
-随后使用`ffmpeg`转换格式,转换完之后删除原来的webm文件.
+随后使用`ffmpeg`,通过电脑的逻辑CPU核数为线程数转换格式,转换完之后删除原来的webm文件.
 
 ## 问题
 
